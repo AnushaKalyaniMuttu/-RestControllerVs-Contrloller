@@ -1,0 +1,1 @@
+@RestController(4.0 version of spring framework) is the combination of @Controller(2.5 version of spring framework) and @ResponseBody
