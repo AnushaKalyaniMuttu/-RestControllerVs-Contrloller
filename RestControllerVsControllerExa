@@ -1,1 +1,36 @@
 
+@RestMapping("/api")
+public class EmployeeController{
+
+
+@RequestMapping(value="/create", method=RequestMethod.POST)
+public Employee createEmployee(){
+}
+
+
+@RestMapping(value="/get", method=RequestMapping.GET)
+@ResponseBody
+public Employee getEmployee(){
+
+}
+//previousVersions
+/*---------------------------------------------------------------------------------------*/
+//Latest Version
+
+
+
+@RestMapping("/api")
+@RestController
+public class EmployeeController{
+
+
+@RequestMapping(value="/create", method=RequestMethod.POST)
+public Employee createEmployee(){
+}
+
+
+@RestMapping(value="/get", method=RequestMapping.GET)
+public Employee getEmployee(){
+
+}
+//We dont need to specify ResponseBody for method if we mention RestController
